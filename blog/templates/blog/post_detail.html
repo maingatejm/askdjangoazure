@@ -14,5 +14,5 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-comments" data-href="http://maingate-askdjango.azurewebsites.net/" data-width="900" data-numposts="5"></div>
+<div class="fb-comments" data-href= "{{request.build_absolute_uri}}{% url "blog.views.post_detail" post.pk %}" data-width="900" data-numposts="5"></div>
 <a href="{% url "blog.views.post_list" %}>글목록으로</a>
